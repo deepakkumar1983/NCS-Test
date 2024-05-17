@@ -2,7 +2,7 @@
 const { test, expect } = require('@playwright/test');
 
 test('Test 1', async ({ page }) => {
-    await page.goto('https://d3sq581icfhdty.cloudfront.net/#/');
+    await page.goto('https:url');
     await page.getByLabel('login or signup').click();
 
     await page.getByText('Sign Up').click();
@@ -40,7 +40,7 @@ test('Test 1', async ({ page }) => {
 
 
   test('Test 2', async ({ page }) => {
-    await page.goto('https://d3sq581icfhdty.cloudfront.net/#/');
+    await page.goto('https:url');
     await page.getByLabel('menu').click();
     await page.getByRole('tab', { name: 'Drinks' }).click();
     await page.locator('div:nth-child(2) > div > div:nth-child(6) > div > .v-card__actions > .container > div:nth-child(3) > .flex > .v-btn').click();
